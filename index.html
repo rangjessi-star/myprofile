@@ -1,92 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>나의 소개 페이지입니다</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, "Noto Sans KR", sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      text-align: center;
-    }
-
-    .profile {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-    }
-
-    .intro {
-      font-size: 18px;
-    }
-
-    .section {
-      margin-top: 35px;
-      padding-top: 25px;
-      border-top: 1px solid #ddd;
-    }
-
-    .tags span {
-      display: inline-block;
-      margin: 5px;
-      padding: 8px 14px;
-      background: #eee;
-      border-radius: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <style>
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        }
+    </style>
 </head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-indigo-50/40 min-h-screen flex items-center justify-center p-4 sm:p-6">
 
-<body>
-  <main class="container">
-    <!-- profile.jpg 파일을 index.html과 같은 폴더에 넣으세요 -->
-    <img class="profile" src="myphoto.png" alt="프로필 이미지">
+    <!-- 메인 프로필 카드 (화면 중앙 배치) -->
+    <main class="w-full max-w-md bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-10 shadow-xl shadow-slate-200/60 border border-slate-100 text-center transition-all">
+        
+        <!-- 1. 프로필 사진 -->
+        <div class="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto mb-6">
+            <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" 
+                alt="프로필 사진" 
+                class="w-full h-full object-cover rounded-full shadow-md ring-4 ring-indigo-500/20"
+                onerror="this.onerror=null; this.src='https://placehold.co/400x400/6366f1/ffffff?text=Profile';"
+            />
+        </div>
 
-    <!-- 아래 내용을 나의 정보로 수정하세요 -->
-    <h1>안녕하세요. 저는 에스텔입니다.</h1>
-    <p class="intro">
+        <!-- 2. 이름 -->
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight mb-2">
+            에스텔
+        </h1>
 
-      요즘에는 여행과 사진 촬영을 즐기고 있습니다.<br>
-      앞으로 AI를 활용해 새로운 것을 만들어보고 싶습니다.
-    </p>
+        <!-- 3. 한 줄 소개 -->
+        <p class="text-indigo-600 font-semibold text-base sm:text-lg mb-6">
+            맛과 색을 요리하는 간단 소소레시피
+        </p>
 
-    <section class="section">
-      <h2>제가 좋아하는 것</h2>
-      <div class="tags">
-        <span>여행</span>
-        <span>사진</span>
-        <span>독서</span>
-      </div>
-    </section>
+        <!-- 4. 3~4줄 정도의 짧은 자기소개 -->
+        <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-2 break-keep font-normal">
+            <p>안녕하세요, 맛과 색을 요리하는 에스텔입니다.</p>
+            <p>제철재료로 만드는 간단하고 건강한 요리,</p>
+            <p>소소한 레시피 블로그를 운영하고 있는 할머니입니다.</p>
+            <p>정성과 마음을 담은 따뜻한 식탁 이야기를 나눕니다.</p>
+        </div>
 
-    <section class="section">
-      <h2>앞으로 해보고 싶은 일</h2>
-      <p>AI를 배우고 활용하면서 새로운 취미와 활동에 도전하고 싶습니다.</p>
-    </section>
-  </main>
+    </main>
+
 </body>
-
 </html>
