@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <style>
+        body {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-slate-100 to-indigo-50/40 min-h-screen flex items-center justify-center p-4 sm:p-6">
+
+    <!-- 메인 프로필 카드 (화면 중앙 배치) -->
+    <main class="w-full max-w-md bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-10 shadow-xl shadow-slate-200/60 border border-slate-100 text-center transition-all">
+        
+        <!-- 1. 프로필 사진 -->
+        <div class="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto mb-6">
+            <img 
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" 
+                alt="프로필 사진" 
+                class="w-full h-full object-cover rounded-full shadow-md ring-4 ring-indigo-500/20"
+                onerror="this.onerror=null; this.src='https://placehold.co/400x400/6366f1/ffffff?text=Profile';"
+            />
+        </div>
+
+        <!-- 2. 이름 -->
+        <h1 class="text-2xl sm:text-3xl font-bold text-slate-800 tracking-tight mb-2">
+            에스텔
+        </h1>
+
+        <!-- 3. 한 줄 소개 -->
+        <p class="text-indigo-600 font-semibold text-base sm:text-lg mb-6">
+            맛과 색을 요리하는 간단 소소레시피
+        </p>
+
+        <!-- 4. 3~4줄 정도의 짧은 자기소개 -->
+        <div class="text-slate-600 text-sm sm:text-base leading-relaxed space-y-2 break-keep font-normal">
+            <p>안녕하세요, 맛과 색을 요리하는 에스텔입니다.</p>
+            <p>제철재료로 만드는 간단하고 건강한 요리,</p>
+            <p>소소한 레시피 블로그를 운영하고 있는 할머니입니다.</p>
+            <p>정성과 마음을 담은 따뜻한 식탁 이야기를 나눕니다.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
